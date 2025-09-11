@@ -13,6 +13,7 @@ public class Student {
         this.name = name;
         this.studentID = ID;
         this.courses = c;
+        System.arraycopy(c, 0, this.courses, 0, c.length);
     }
 
     public void printName() {
@@ -59,7 +60,10 @@ public class Student {
 
         s1.addCourse("MATH242");
 
+        myCourses[0] = "";
+
         System.out.println(Arrays.toString(s1.courses));
+        System.out.println(Arrays.toString(myCourses));
         System.out.println(s1.toString());
     }
 }
