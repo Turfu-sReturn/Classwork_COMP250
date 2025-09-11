@@ -19,7 +19,6 @@ public class Car {
         System.out.println("Creating new empty car...");
     }
 
-
     private void changeSpeed (int newSpeed) {
         this.speed = newSpeed;
     }
